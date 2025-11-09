@@ -661,8 +661,15 @@
         </div>
 
         <div class="hero-cta">
-          <a class="btn btn-primary" href="https://t.me/+M1Yn18s3z1Y5OTk0" target="_blank">
-            Get started with automation
+          <a class="btn btn-primary"
+          href="https://t.me/+M1Yn18s3z1Y5OTk0"
+          target="_blank"
+          onclick="gtag('event', 'click', {
+          'event_category': 'Button',
+          'event_label': 'Telegram Automation',
+          'value': 1
+          })">
+          Get started with automation
           </a>
           <button class="btn btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
             Contact and joining information
